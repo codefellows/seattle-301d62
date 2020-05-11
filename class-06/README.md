@@ -2,6 +2,7 @@
 
 ## Week 1 Feedback
 
+- testing testing 123
 - Coming to grasp with turning things in unfinished
 - still feel somewhat behind
 - prioritizing when to turn in code challenges vs lab has been tough
