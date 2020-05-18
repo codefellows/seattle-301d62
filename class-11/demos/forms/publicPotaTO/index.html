@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/style.css">
+  <!-- the / stands for root which is publicPotaTO -->
+</head>
+<body>
+  <h1>Form Practice</h1>
+
+  <form action="/contact" method="POST">
+    <!-- posts dont send queries by default in html, they send encoded formdata -->
+    <fieldset>
+      <legend>contact info</legend>
+      <label for="firstName">first Name</label>
+      <input type="text" name="firstName">
+
+      <label for="coolness">first Name</label>
+      <input type="number" name="coolness">
+
+      <label for="well-rested">first Name</label>
+      <input type="checkbox" name="well-rested">
+
+      <input type="submit">
+    </fieldset>
+  </form>
+
+  <form action="/testQuery">
+    <fieldset>
+      <h2>default get form</h2>
+      <input type="text" name="potatoMonster">
+      <input type="submit">
+    </fieldset>
+  </form>
+</body>
+</html>

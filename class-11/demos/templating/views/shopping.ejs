@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>shopping page</h1>
+  <nav>
+    <ul>
+      <li><a href="/">home</a></li>
+      <li><a href="/list"> grocery list</a></li>
+      <li><a href="/quantities"> grocery list quantities</a></li>
+    </ul>
+  </nav>
+
+  <p>in a self closing tag <%%= varname %%> ejs displays / puts the variable on the page, it is akin to handlebars {{ }}</p>
+  <p><%= arrayOfShoppingItems %></p>
+
+  <ul>
+    <% arrayOfShoppingItems.forEach(item => { %>
+      <li><%= item %></li>
+    <% }) %>
+  </ul>
+</body>
+
+</html>
