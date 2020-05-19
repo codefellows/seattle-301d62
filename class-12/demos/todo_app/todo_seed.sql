@@ -1,0 +1,3 @@
+INSERT INTO tasks (category, priority, completed, planned_time_in_seconds, title, description) VALUES ('schoolwork', 1, false, 8000, 'finish lab 11', 'connect api properly');
+
+INSERT INTO tasks (category, priority, completed, planned_time_in_seconds, title, description) VALUES ('dragons', 8, false, 90000, 'raise a dragon egg', 'incubate it, in lava, bathe in fire regularly, surrounding it with death helps');
