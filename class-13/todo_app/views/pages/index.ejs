@@ -1,0 +1,27 @@
+
+<%- include('../partials/head.ejs') %>
+
+<body>
+  <h1>Things We Gotta Do</h1>
+
+  <%- include('../partials/nav.ejs') %>
+
+  <table>
+    <thead>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Description</th>
+      <th>Priority</th>
+      <th>Planned Time</th>
+      <th>Completed</th>
+      <th>link to detail</th>
+    </thead>
+    <tbody>
+      <% for(let i = 0; i < tasksArr.length; i++) { %>
+          <% include('../partials/task_row.ejs', {tasksArr: tasksArr, i : i}) %>   
+          <%- include('../partials/task_row_improved.ejs', {task : tasksArr[i]}) %>   
+      <% } %>
+    </tbody>
+  </table>
+</body>
+</html>

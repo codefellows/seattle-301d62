@@ -1,0 +1,21 @@
+<%- include('../partials/head.ejs') %>
+
+<body>
+  
+  <%- include('../partials/nav.ejs') %>
+  <h1><%= title %></h1>
+  <p><%= description %></p>
+  <button id="update">update</button>
+  <form id="form" action="/tasks/<%= id %>/update?_overrideMethod=PUT" method="POST">
+    <fieldset>
+      <label for="title">title</label>
+      <input type="text" name="title" value="<%=title %>">
+      <label for="description">description</label>
+      <input type="text" name="description" value="<%=description %>">
+      <input type="submit" value="update">
+    </fieldset>
+  </form>
+
+  <script src="/app.js"></script>
+</body>
+</html>
