@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>single detailed book</h1>
+  
+  <table> 
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>image</th>
+      </tr>
+    </thead>
+    <tbody>
+        <%- include('partials/bookDetail.ejs', {book : book, displayLink : false}) %>
+    </tbody>
+    </table>
+</body>
+</html>

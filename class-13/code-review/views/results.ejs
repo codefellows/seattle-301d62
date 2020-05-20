@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <h1>Saved Books</h1>
+  <a href="/searches/new">search books</a>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>image</th>
+        <th>Save</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% savedBooks.forEach(book => { %>
+        <%- include('partials/bookDetail.ejs', {book : book, displayLink : false}) %>
+        <td>
+          <form action="/books" method="POST">
+            <input type="hidden" name="title" value="<%= book.title %>"">
+            <input type="hidden" name="author" value="<%=book.author %>">
+            <input type="hidden" name="img" value="<%=book.img %>">
+            <input type="submit" value="save <%=book.title%>">
+          </form>
+        </td>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+
+</html>

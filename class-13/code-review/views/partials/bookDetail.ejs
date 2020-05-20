@@ -1,0 +1,11 @@
+<tr>
+  <td><%= book.title %> </td>
+  <td><%= book.author %></td>
+  <td><img src="<%= book.img %>" alt=""></td>
+
+  <!-- we could either make a dynamic route (should feel ok) -->
+  <!-- or conditionally display it -->
+  <% if(displayLink) { %>
+    <td><a href="/books/<%= book.id %>">Details</a></td>
+  <% } %>
+</tr>

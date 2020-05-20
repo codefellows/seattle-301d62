@@ -1,0 +1,12 @@
+img {
+  max-width: 150px;
+}
+
+table {
+  border-collapse: collapse;
+  border: solid black 1px;
+}
+
+td, th {
+  border: solid black 1px;
+}
